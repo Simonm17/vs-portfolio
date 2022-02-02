@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components'
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+import Top from './components/Top';
+import Dashboard from './components/Dashboard';
+import Bio from './components/Bio';
+import Resume from './components/Resume';
+import Projects from './components/Projects';
+import Youtube from './components/Youtube';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppStyle>
+        <Top />
+        <Dashboard />
+    </AppStyle>
   );
 }
+
+const AppStyle = styled.div`
+  height: 100vh;
+`
 
 export default App;
