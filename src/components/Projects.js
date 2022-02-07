@@ -5,7 +5,7 @@ import styled from 'styled-components'
 function Projects() {
 
     return (
-        <>Projects</>
+        <>Project</>
     );
 }
 
